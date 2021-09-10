@@ -79,4 +79,15 @@ public class Operations {
         System.out.println("\n After Sorting an list:");
         linkedList.display();
     }
+
+    public static int searchtest(int value)
+    {
+        LinkedList linkedList=new LinkedList();
+        linkedList.push(70);
+        linkedList.push(40);
+        linkedList.push(30);
+        linkedList.push(56);
+        int result=linkedList.searchtest(value);
+        return result;
+    }
 }

@@ -63,8 +63,7 @@ public class LinkedList {
     {
         Node tempNode=head;
         int index=1;
-        while(tempNode.data != value)
-        {
+        while(tempNode.data != value) {
             tempNode = tempNode.next;
             index++;
         }
@@ -138,5 +137,15 @@ public class LinkedList {
             }
         }
 
+    }
+
+    public int searchtest(int value)
+    {
+        Node tempNode=head;
+        while( tempNode.data != value ) {
+            tempNode = tempNode.next;
+        }
+        int result=tempNode.data;
+        return result;
     }
 }
