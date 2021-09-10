@@ -42,4 +42,9 @@ public class Operations {
         linkedlist.poplast();
         linkedlist.display();
     }
+
+    public static void searchelement() {
+        LinkedList linkedList=addoperation();
+        linkedList.searchelement(LinkedListMain.search);
+    }
 }
