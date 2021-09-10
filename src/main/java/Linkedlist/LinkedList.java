@@ -75,6 +75,29 @@ public class LinkedList {
 
     }
 
+    public void delete(int delete){
+        int size=0;
+        Node temp = head;
+        while (temp != null){
+            temp = temp.next;
+            size++;
+        }
+        temp=head;
+        while(temp.next.data != delete){
+            temp = temp.next;
+        }
+        System.out.println("\nthe size of the list is "+size);
+        temp.next = temp.next.next;
+        temp.next.next=null;
+        temp = head;
+        size=0;
+        while (temp != null){
+            temp = temp.next;
+            size++;
+        }
+        System.out.println("\nthe size of the list is "+size);
+    }
+
 
     public void display(){
         if (head == null) {
