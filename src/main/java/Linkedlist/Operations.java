@@ -45,6 +45,8 @@ public class Operations {
 
     public static void searchelement() {
         LinkedList linkedList=addoperation();
+        System.out.print("\n Enter the value to find:");
+        LinkedListMain.search=LinkedListMain.sc.nextInt();
         linkedList.searchelement(LinkedListMain.search);
     }
 
@@ -80,14 +82,16 @@ public class Operations {
         linkedList.display();
     }
 
-    public static int searchtest(int value)
-    {
-        LinkedList linkedList=new LinkedList();
-        linkedList.push(70);
-        linkedList.push(40);
-        linkedList.push(30);
-        linkedList.push(56);
-        int result=linkedList.searchtest(value);
+    public static int searchtest(int value) {
+        LinkedList linkedList=addoperation();
+        int result;
+        result = linkedList.searchelement(value);
+        return result;
+    }
+
+    public static int inserttest(int nextnode,int newnode){
+        LinkedList linkedList = addoperation();
+        int result=linkedList.insert(nextnode,newnode);
         return result;
     }
 }

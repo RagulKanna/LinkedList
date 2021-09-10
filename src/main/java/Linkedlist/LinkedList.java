@@ -31,16 +31,23 @@ public class LinkedList {
         }
     }
 
-    public void insert(int firstnode,int data) {
+    public int insert(int firstnode,int data) {
         Node newnode =new Node(data);
         Node previousnode=new Node(firstnode);
         Node temp=head;
+        int index=1;
         while(temp.data != previousnode.data){
             temp=temp.next;
         }
         Node tempNode =temp.next;
         temp.next = newnode;
         newnode.next = tempNode;
+        temp=head;
+        while(temp.data != newnode.data){
+            temp=temp.next;
+            index++;
+        }
+        return index;
     }
 
     public Node popfirst() {
@@ -59,7 +66,7 @@ public class LinkedList {
         tempNode.next = null;
     }
 
-    public void searchelement(int value)
+    public int searchelement(int value)
     {
         Node tempNode=head;
         int index=1;
@@ -71,6 +78,9 @@ public class LinkedList {
             System.out.println("\nthe searched data is "+value+" and its index is  "+index);
         else
             System.out.println("the searched data is not available");
+
+        int result= tempNode.data;
+        return result;
 
     }
 
@@ -139,13 +149,4 @@ public class LinkedList {
 
     }
 
-    public int searchtest(int value)
-    {
-        Node tempNode=head;
-        while( tempNode.data != value ) {
-            tempNode = tempNode.next;
-        }
-        int result=tempNode.data;
-        return result;
-    }
 }

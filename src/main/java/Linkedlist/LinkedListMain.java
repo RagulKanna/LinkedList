@@ -3,9 +3,10 @@ package Linkedlist;
 import java.util.Scanner;
 
 public class LinkedListMain {
-    public static int search,addnode,afternode,deletenode;
+    public static Scanner sc = new Scanner(System.in);
+    public static int search,searchtest,addnode,afternode,deletenode;
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter \n 1 to add element at the start \n " +
                 "2 to append an element " +
                 "\n 3 to insert an element" +
@@ -39,8 +40,7 @@ public class LinkedListMain {
                 break;
 
             case 6:
-                System.out.print("\n Enter the value to find:");
-                search=sc.nextInt();
+
                 Operations.searchelement();
                 break;
 
