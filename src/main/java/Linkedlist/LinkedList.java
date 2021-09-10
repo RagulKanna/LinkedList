@@ -84,7 +84,7 @@ public class LinkedList {
 
     }
 
-    public void delete(int delete){
+    public int delete(int delete){
         int size=0;
         Node temp = head;
         while (temp != null){
@@ -110,6 +110,8 @@ public class LinkedList {
         System.out.println("\n After deleting:");
         System.out.println("\nthe size of the list is "+size);
         display();
+
+        return size;
     }
 
     public void sort(){

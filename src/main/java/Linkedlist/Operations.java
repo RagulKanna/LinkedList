@@ -94,4 +94,14 @@ public class Operations {
         int result=linkedList.insert(nextnode,newnode);
         return result;
     }
+
+    public static int deletetest(int deletenode){
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(40);
+        linkedList.push(30);
+        linkedList.push(56);
+        int result=linkedList.delete(deletenode);
+        return result;
+    }
 }
