@@ -7,6 +7,7 @@ public class LinkedListMain {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter \n 1 to add element at the start \n " +
                 "2 to append an element " +
+                "\n 3 to insert an element" +
                 "\n choice: ");
 
         switch (sc.nextInt()) {
@@ -16,6 +17,10 @@ public class LinkedListMain {
 
             case 2:
                 Operations.appendoperation();
+                break;
+
+            case 3:
+                Operations.insertoperation();
                 break;
         }
     }
