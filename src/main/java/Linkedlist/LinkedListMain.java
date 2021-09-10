@@ -9,6 +9,7 @@ public class LinkedListMain {
                 "2 to append an element " +
                 "\n 3 to insert an element" +
                 " \n 4 to pop an first element" +
+                " \n 5 to pop an last element" +
                 "\n choice: ");
 
         switch (sc.nextInt()) {
@@ -26,6 +27,10 @@ public class LinkedListMain {
 
             case 4:
                 Operations.popfirstoperation();
+                break;
+
+            case 5:
+                Operations.poplastoperation();
                 break;
         }
     }

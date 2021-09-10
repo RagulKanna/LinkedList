@@ -36,4 +36,10 @@ public class Operations {
         linkedlist.popfirst();
         linkedlist.display();
     }
+
+    public static void poplastoperation() {
+        LinkedList linkedlist =addoperation();
+        linkedlist.poplast();
+        linkedlist.display();
+    }
 }

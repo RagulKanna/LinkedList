@@ -50,6 +50,16 @@ public class LinkedList {
         return tempNode;
     }
 
+    public void poplast() {
+        Node tempNode = head;
+        while(!tempNode.next.equals(tail)) {
+            tempNode = tempNode.next;
+        }
+        this.tail = tempNode;
+        tempNode.next = null;
+    }
+
+
 
     public void display(){
         if (head == null) {
